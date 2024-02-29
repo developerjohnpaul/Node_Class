@@ -1,0 +1,36 @@
+GET http://localhost:8000/getUsers
+
+###
+GET http://localhost:8000/currentUser
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcwMTUzOTQxOCwiZXhwIjoxNzAxNTM5NDM4fQ.ximb2fi_-sDYou4RGoHV-lT7zdPJckkJgj-PW-VgJ-s
+###
+
+GET https://beagapesprings.onrender.com/searchEmail/developerjohnpaul@gmail.com
+###
+POST  http://localhost:8000/signUp/email
+Content-Type: application/json
+
+{
+ "fullName": "john paul",
+  "email": "developerjohnpaul@gmail.com",
+   "password": "12345",
+  "signUpDate": "monday"
+  }
+
+
+###
+POST  http://localhost:8000/sendEmailOtp
+Content-Type: application/json
+
+{
+  "email": "develpal@gmail.com"
+  }
+
+  
+###
+POST  http://localhost:8000/sendEmailOtp
+Content-Type: application/json
+
+{
+  "email": "develpal@gmail.com"
+  }
